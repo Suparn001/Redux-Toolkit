@@ -10,14 +10,11 @@ const SearchBar = () => {
 
 
     const handleSearch = (e) => {
-        // console.log("Searching for:", text);
-        console.log("e", e.target.value);
         setText(e.target.value);
     }
 
     const submitHandler = (e) => {
         e.preventDefault();
-        // console.log("Form submitted with query:", text);
         dispatch(setQuery(text));
         setText("");
     }

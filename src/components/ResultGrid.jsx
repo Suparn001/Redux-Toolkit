@@ -78,7 +78,6 @@ const ResultGrid = () => {
 
                 }
                 dispatch(setResults(data));
-                console.log(`Fetched ${activeTab} data:`, data);
             } catch (error) {
                 dispatch(setError(error.message));
                 console.error("Error fetching data:", error);
